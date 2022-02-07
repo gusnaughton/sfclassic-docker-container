@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  sfclassic:
+    build: .
+    tty: true
+    ports:
+      - "27016:27016"
+      - "27016:27016/udp"
+      - "27006:27006"
+      - "27060:27060"
+      - "5900:5900"
+    volumes:
+      - ../sourceforts-data:/data
+    command: '/bin/sh'
