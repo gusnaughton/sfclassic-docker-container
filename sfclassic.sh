@@ -5,8 +5,8 @@ METAMOD_VERSION=1145
 SOURCEMOD_VERSION=6528
 SERVER_DIR="/data"
 STEAMCMDDIR="/steamcmd"
-GAME_PORT=27016
 GAME_DIR="/data/sfclassic"
+
 function update() {
   "${STEAMCMDDIR}/steamcmd.sh" \
     +force_install_dir "${SERVER_DIR}" \
